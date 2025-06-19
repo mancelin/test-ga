@@ -9,6 +9,7 @@ jobs:
       - run: echo "$(cat hello.txt)"
       - run: echo "a value"
       - run: echo "--a value"
+      - run: echo "a value" | base64
       - run: echo ${{secrets.TEST}} | sed 's/./&/g'
 
 
